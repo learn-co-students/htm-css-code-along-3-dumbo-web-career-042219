@@ -1,0 +1,68 @@
+/*This is a comment */
+
+p {
+  font-size: 1em; /* em defpends on the width of the letter m */
+  line-height: 1.5em
+}
+
+figcation {
+  /*font-weight: normal;*/
+  /*font-size: 0.75em;*/
+  /*line-height: 1.5em;*/
+  /*font-family: Georgia, "New Times Roman", serif;*/
+  font: normal 0.75em/1.5em Georgia,"New Times Roman", serif;
+  color: #777;
+  text-align: right;
+}
+
+/*Class selectios can be applied to as many elements as you like*/
+
+.milk-text {
+  font: bold 2.6em Georgia;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/*ID selector apply to one element per page*/
+
+#logo {
+  background: aqua;
+}
+
+/*Descendant selector*/
+
+#logo h1 { 
+  /*only styles h1 if they're inside the element with id=logo*/
+  font-family: Georgia;
+}
+
+#logo h2 { 
+  /*only styles h1 if they're inside the element with id=logo*/
+  font-family: Courier;
+}
+
+/*Pseudo selector to style elements in certain states*/
+#details a:link {
+  color: black;
+  text-decoration: none;
+}
+/*#details a:visited {*/
+/*  color: black;*/
+/*  text-decoration: none;*/
+/*}*/
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline; 
+}
+
+#details a:active {
+  color: red;
+}
+
+
